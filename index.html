@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ORIGIN '26 | The Beginning of the Next Big Thing</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Star Cursor -->
+    <div id="star-cursor" class="star-cursor">
+        <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+            <path d="M12 0L14.59 8.41L23 11L14.59 13.59L12 22L9.41 13.59L1 11L9.41 8.41L12 0Z"/>
+        </svg>
+    </div>
+
+    <!-- Soft Celestial Canvas -->
+    <canvas id="starfield-canvas"></canvas>
+
+    <!-- Navigation Bar -->
+    <nav class="glass-nav">
+        <div class="nav-container">
+            <a href="#" class="brand-container">
+                <img src="techniki-logo.png" alt="Techniki Logo" class="brand-logo-img">
+            </a>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#verticals">Verticals</a>
+                <a href="#timeline">Process</a>
+                <a href="#solutions">Pathways</a>
+                <a href="#history">Legacy</a>
+            </div>
+            <a href="#register" class="cta-btn-sm">Register Now</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container hero-content">
+            <span class="hero-tagline scroll-reveal" id="hero-tagline"></span>
+            <h1 class="hero-title scroll-reveal" id="hero-title"></h1>
+            <p class="hero-subtitle scroll-reveal" id="hero-subtitle"></p>
+            <div class="meta-pills scroll-reveal">
+                <div class="pill">
+                    <span class="icon">📅</span>
+                    <span id="hero-date"></span>
+                </div>
+                <div class="pill">
+                    <span class="icon">📍</span>
+                    <span id="hero-venue"></span>
+                </div>
+            </div>
+            <div class="hero-actions scroll-reveal">
+                <a href="#register" class="cta-btn-primary">Join Hackathon</a>
+                <a href="#about" class="cta-btn-secondary">Explore Details</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="grid-2">
+                <div class="glass-card scroll-reveal">
+                    <span class="card-badge">THE HACKATHON</span>
+                    <h2>About ORIGIN '26</h2>
+                    <p id="about-hackathon-text" style="margin-top: 12px; color: var(--text-secondary);"></p>
+                </div>
+                <div class="glass-card scroll-reveal">
+                    <span class="card-badge">THE MOTIVE</span>
+                    <h2>Solutions > Ideas</h2>
+                    <p id="about-motive-text" style="margin-top: 12px; color: var(--text-secondary);"></p>
+                    <div class="organizer-footer">
+                        <span>Organized by <strong>Techniki & ASET</strong></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Verticals Section -->
+    <section id="verticals" class="section">
+        <div class="container">
+            <div class="section-header scroll-reveal">
+                <h2>Core Verticals & Domains</h2>
+                <p>Innovate across high-impact technological frontiers</p>
+            </div>
+            <div class="domains-grid" id="domains-grid"></div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <!-- Timeline / Process Section -->
+<section id="timeline" class="section">
+    <div class="container">
+        <div class="section-header scroll-reveal">
+            <h2>How ORIGIN '26 Works</h2>
+            <p>From a real-world challenge to a working prototype</p>
+        </div>
+        <div class="timeline-wrapper" id="timeline-wrapper">
+            <!-- Dynamically populated without tilt-card class -->
+        </div>
+    </div>
+</section>
+
+    <!-- Solution Pathways Section -->
+    <section id="solutions" class="section">
+        <div class="container">
+            <div class="section-header scroll-reveal">
+                <h2>Solution Pathways</h2>
+                <p>Choose your build focus and create practical impact</p>
+            </div>
+            <div class="grid-2">
+                <div class="glass-card scroll-reveal">
+                    <div style="font-size: 2rem; margin-bottom: 12px;">&lt;/&gt;</div>
+                    <h3>Software Solutions</h3>
+                    <p style="color: var(--text-secondary); margin-top: 8px;">AI-powered platforms, web applications, mobile solutions, automation tools, analytics dashboards, and intelligent software designed to solve real-world challenges.</p>
+                </div>
+                <div class="glass-card scroll-reveal">
+                    <div style="font-size: 2rem; margin-bottom: 12px;">⚙️</div>
+                    <h3>Hardware Solutions</h3>
+                    <p style="color: var(--text-secondary); margin-top: 8px;">IoT devices, embedded systems, robotics, smart sensors, automation prototypes, and integrated hardware-software solutions built for practical implementation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- History Section -->
+    <section id="history" class="section">
+        <div class="container">
+            <div class="section-header scroll-reveal">
+                <h2>The Journey So Far</h2>
+                <p>Building an ongoing ecosystem of technical excellence</p>
+            </div>
+            <div class="grid-3" id="history-grid"></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <h3>Techniki</h3>
+                <p>Amity School Of Engineering and Technology (ASET)</p>
+            </div>
+            <div>
+                <p>&copy; CopyRight - All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
